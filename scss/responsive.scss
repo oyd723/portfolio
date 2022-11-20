@@ -1,0 +1,526 @@
+@media screen and (max-width: 480px) {
+
+  @mixin center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+
+  .onli-mobile02,
+  .only-mobile03 {
+    display: block;
+  }
+
+  // ---------------------------
+  // 　全体構造
+  // ---------------------------
+
+  body {
+    font-size: 13px;
+    overflow: hidden;
+    height: auto;
+
+    .bg-top {
+      // 背景模様
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      background:
+        url(../images/image03.svg) no-repeat left top / 100%;
+    }
+
+    .bg-bottom {
+      // 背景模様
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      background:
+        url(../images/image05.svg) no-repeat right bottom / 60%;
+    }
+  }
+
+  // ---------------------------
+  // 　ナビゲーション
+  // ---------------------------
+  nav {
+    position: fixed;
+    padding: 15px;
+    padding-left: 20px;
+
+    li {
+      font-size: 14px;
+      margin-right: 15px;
+    }
+  }
+
+
+  // ---------------------------
+  // 　TOPページ
+  // ---------------------------
+  #top {
+    width: auto;
+    height: 100vh;
+    position: relative;
+
+    .flower {
+      img:first-child {
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: rotate(90deg);
+        margin-left: -50px;
+      }
+
+      img:last-child {
+        width: 200px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        margin-top: -30px;
+        margin-right: -10px;
+        transform: rotate(90deg);
+      }
+
+      // display: none;
+    }
+
+    .text {
+      height: 100vh;
+      @include center;
+      padding-top: 0;
+
+      img {
+        padding-top: 50px;
+        width: 300px;
+        margin-left: 0;
+      }
+
+      p {
+        margin-left: 0;
+        text-align: left;
+        padding: 50px;
+        padding-top: 30px;
+      }
+    }
+  }
+
+  // ---------------------------
+  // 　Worksページ
+  // ---------------------------
+  #works {
+    width: 100%;
+
+    .contents {
+      // text-align: center;
+      // height: 100vh;
+      // @include center;
+
+      p {
+        margin-bottom: 50px;
+      }
+
+      ul {
+        display: block;
+
+        li a {
+          margin-bottom: 30px;
+        }
+
+        li:first-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  // ---------------------------
+  // 　Webページ
+  // ---------------------------
+  #web {
+    .contents {
+      padding-top: 0;
+      height: 100vh;
+      @include center;
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      .wrapper {
+        display: block;
+
+        img {
+          width: 300px;
+          margin-bottom: 0;
+          transform: scale(1);
+          transition: .3s ease-in-out;
+        }
+
+        img:hover,
+        p:hover {
+          transform: scale(1.15);
+        }
+
+
+        p {
+          font-size: 13px;
+          font-weight: bold;
+          transform: scale(1);
+          transition: .3s ease-in-out;
+          line-height: 20px;
+        }
+
+        p:first-child {
+          margin-bottom: 30px;
+        }
+
+        .left {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+
+  // ---------------------------
+  // 　graphicページ
+  // ---------------------------
+
+  #graphic {
+    .contents {
+      height: 100vh;
+      @include center;
+      padding-top: 0;
+
+      .one,
+      .two,
+      .three,
+      .four,
+      .five {
+        display: none;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      img {
+        width: 200px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        transition-duration: .5s;
+      }
+
+      .wrap-vertical {
+        overflow: hidden;
+        width: 90%;
+        height: 750px;
+      }
+
+      .wrap-vertical__inner {
+        overflow-y: scroll;
+        height: 100%;
+        padding: 20px;
+        // padding-right: calc(1em + 17px);
+        // width: calc(90% + 17px);
+      }
+
+      p {
+        line-height: 20px;
+        margin-bottom: 30px;
+      }
+
+      .wrapper {
+        display: block;
+
+        div {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+
+  // ---------------------------
+  // 　contactページ
+  // ---------------------------
+
+  #contact {
+    .contents {
+      height: 100vh;
+      @include center;
+      padding-top: 50px;
+
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 50px;
+      }
+
+      img {
+        width: 270px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        margin-bottom: 50px;
+      }
+
+      a {
+        display: block;
+        width: 300px;
+        height: 70px;
+        background-color: #fff;
+        line-height: 70px;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+
+    }
+  }
+
+
+  // ---------------------------
+  // 　aboutページ
+  // ---------------------------
+
+  #about {
+    .contents {
+      height: 100vh;
+      @include center;
+
+
+      .wrap-vertical {
+        overflow: hidden;
+        width: 80%;
+        height: 500px;
+      }
+
+      .title {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-left: 0;
+
+        .image {
+          background-color: rgba(255, 255, 255, .5);
+          margin-right: 20px;
+          width: 150px;
+          height: 150px;
+          @include center;
+          border-radius: 100%;
+
+          img {
+            width: 100px;
+          }
+        }
+
+        h1 {
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+
+        p {
+          font-size: 6px;
+          line-height: 20px;
+        }
+
+        p:last-child {
+          font-size: 12px;
+        }
+      }
+
+      .wrap-vertical__inner {
+        overflow-y: scroll;
+        height: 100%;
+        padding: 20px;
+
+        h3 {
+          font-size: 17px;
+          font-weight: 700;
+          text-indent: -1em;
+        }
+
+        p {
+          margin-bottom: 50px;
+          margin-right: 0;
+          font-size: 12px;
+        }
+
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+
+  // ---------------------------
+  // 　WEBサイト / 久米島高校
+  // ---------------------------
+  #kumejima {
+    .contents {
+      height: 100vh;
+
+      .inner {
+        display: block;
+        @include center;
+
+        .wrapper {
+          margin-right: 0;
+
+          .text {
+            margin-bottom: 20px;
+
+            img {
+              width: 350px;
+            }
+
+            a {
+              width: 200px;
+              height: 35px;
+              line-height: 35px;
+              font-size: 13px;
+            }
+          }
+
+          // 画像スライドショー
+          .image {
+            display: none;
+          }
+        }
+
+        // 下コンテンツ
+        .wrap-vertical {
+          width: 95%;
+          height: 450px;
+          text-align: left;
+        }
+
+        .wrap-vertical__inner {
+          padding: 20px;
+        }
+
+        h2 {
+          font-size: 17px;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        h3 {
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 10px;
+          padding: 5px;
+          padding-left: 15px;
+        }
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+
+  // ---------------------------
+  // 　WEBサイト / 800degrees
+  // ---------------------------
+  // スライドショーの設定
+  #pizza {
+    .contents {
+      height: 100vh;
+
+      .inner {
+        padding-top: 0;
+
+        .wrapper {
+          margin-bottom: 20px;
+          display: block;
+
+          .text {
+            margin-right: 0;
+
+            img {
+              width: 350px;
+            }
+
+            a {
+              width: 200px;
+              height: 35px;
+              line-height: 35px;
+              font-size: 13px;
+            }
+          }
+
+          // 画像スライドショー
+          .image {
+            display: none;
+          }
+        }
+
+        // 下コンテンツ
+        .wrap-vertical {
+          width: 95%;
+          height: 450px;
+          text-align: left;
+        }
+
+        .wrap-vertical__inner {
+          padding: 20px;
+        }
+
+        h2 {
+          font-size: 17px;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        h3 {
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 10px;
+          padding: 5px;
+          padding-left: 15px;
+        }
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+
+
+
+  // font-family: 'M PLUS 1p', sans-serif;
+  // 100 / 300 / 400 / 700
+
+  // font-family: 'Montserrat', sans-serif;
+  // 200 / 300 / 400
+
+
+
+
+
+
+
+
+
+
+
+
+}
