@@ -504,6 +504,360 @@
   }
 
 
+  // ---------------------------
+  // 　graphic コンテンツページ
+  // ---------------------------
+  #graphicContents {
+
+    .logo01,
+    .logo02 {
+      height: 100vh;
+
+      h1 {
+        font-size: 20px;
+        padding: 20px;
+        padding-right: 50px;
+        padding-top: 100px;
+        text-align: right;
+      }
+
+      .wrapper {
+        width: auto;
+        display: block;
+
+        .inner {
+          @include center;
+
+          .left {
+            @include center;
+            margin-right: 0;
+
+
+            img {
+              margin-bottom: 10px;
+              width: 250px;
+            }
+
+            img:last-child {
+              margin-bottom: 30px;
+              width: 200px;
+            }
+          }
+
+          .wrap-vertical {
+            overflow: hidden;
+            width: 95%;
+            height: 400px;
+            @include center;
+          }
+
+          .wrap-vertical__inner {
+            overflow-y: scroll;
+            height: auto;
+            padding: 20px;
+            // padding-right: calc(1em + 17px);
+            // width: calc(90% + 17px);
+            text-align: left;
+
+            h3 {
+              font-size: 14px;
+              margin-bottom: 10px;
+              // display: block;
+              padding: 5px;
+              padding-left: 15px;
+              width: auto;
+            }
+
+            p {
+              margin-bottom: 20px;
+            }
+
+            p:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  #graphicContents .logo02 .wrapper .inner .left img:first-child {
+    width: 200px;
+  }
+
+  // ---------------------------
+  // 　graphic コンテンツページ（別構造）
+  // ---------------------------
+  // 縦長の作品
+  #graphicContents {
+
+    .poster01,
+    .postcard01,
+    .flyer01,
+    .flyer02,
+    .flyer03,
+    .flyer04,
+    .book01,
+    .book02,
+    .namecard01 {
+      width: 100%;
+
+      h1 {
+        font-size: 20px;
+        padding: 20px;
+        padding-right: 50px;
+        padding-top: 100px;
+        text-align: right;
+      }
+
+      .wrapper {
+        width: auto;
+        display: block;
+
+        .inner {
+          @include center;
+
+          .left {
+            @include center;
+            margin-right: 0;
+
+
+            img {
+              width: 250px;
+              margin-bottom: 20px;
+            }
+
+            img:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          .wrap-vertical {
+            overflow: hidden;
+            width: 95%;
+            height: 400px;
+            @include center;
+          }
+
+          .wrap-vertical__inner {
+            overflow-y: scroll;
+            height: auto;
+            padding: 20px;
+            text-align: center;
+
+            img {
+              width: 300px;
+            }
+
+            h3 {
+              font-size: 14px;
+              margin-bottom: 10px;
+              // display: block;
+              padding: 5px;
+              padding-left: 15px;
+              width: auto;
+              text-align: left;
+            }
+
+            p {
+              margin-bottom: 20px;
+              text-align: left;
+            }
+
+            p:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ---------------------------
+  // 　graphic コンテンツページ（別構造）
+  // ---------------------------
+  // 横長の作品
+  #graphicContents {
+
+    .book03,
+    .book07,
+    .namecard02,
+    .menu01 {
+      width: 100%;
+
+      h1 {
+        font-size: 20px;
+        padding: 20px;
+        padding-right: 50px;
+        padding-top: 100px;
+        text-align: right;
+      }
+
+      .wrapper {
+        width: auto;
+        display: block;
+
+        .inner {
+          @include center;
+
+          .left {
+            @include center;
+            margin-right: 0;
+
+            img {
+              width: 350px;
+              margin-bottom: 20px;
+            }
+
+            img:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          .wrap-vertical {
+            overflow: hidden;
+            width: 95%;
+            height: 400px;
+            @include center;
+          }
+
+          .wrap-vertical__inner {
+            overflow-y: scroll;
+            height: auto;
+            padding: 20px;
+            text-align: center;
+
+            img {
+              width: 350px;
+            }
+
+            h3 {
+              font-size: 14px;
+              margin-bottom: 10px;
+              // display: block;
+              padding: 5px;
+              padding-left: 15px;
+              width: auto;
+              text-align: left;
+            }
+
+            p {
+              margin-bottom: 20px;
+              text-align: left;
+            }
+
+            p:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  // ---------------------------
+  // 　graphic コンテンツページ（別構造）
+  // ---------------------------
+  // 横長2画像の作品
+  #graphicContents {
+
+    .book03,
+    .book07,
+    .namecard02,
+    .menu01 {
+      width: 100%;
+
+      h1 {
+        font-size: 20px;
+        padding: 20px;
+        padding-right: 50px;
+        padding-top: 100px;
+        text-align: right;
+      }
+
+      .wrapper {
+        width: auto;
+        display: block;
+
+        .inner {
+          @include center;
+
+          .left {
+            @include center;
+            margin-right: 0;
+
+            img {
+              width: 350px;
+              margin-bottom: 20px;
+            }
+
+            img:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          .wrap-vertical {
+            overflow: hidden;
+            width: 95%;
+            height: 400px;
+            @include center;
+          }
+
+          .wrap-vertical__inner {
+            overflow-y: scroll;
+            height: auto;
+            padding: 20px;
+            text-align: center;
+
+            img {
+              width: 350px;
+            }
+
+            h3 {
+              font-size: 14px;
+              margin-bottom: 10px;
+              // display: block;
+              padding: 5px;
+              padding-left: 15px;
+              width: auto;
+              text-align: left;
+            }
+
+            p {
+              margin-bottom: 20px;
+              text-align: left;
+            }
+
+            p:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #graphicContents .menu01 .wrapper .inner .left img {
+    width: 280px;
+    margin-bottom: 0;
+  }
+
+  #graphicContents .namecard01 .wrapper .inner .left img {
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
   // font-family: 'M PLUS 1p', sans-serif;
@@ -511,15 +865,6 @@
 
   // font-family: 'Montserrat', sans-serif;
   // 200 / 300 / 400
-
-
-
-
-
-
-
-
-
 
 
 
