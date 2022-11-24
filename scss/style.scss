@@ -508,22 +508,9 @@ footer {
 // 　WEBサイト / 久米島高校
 // ---------------------------
 #kumejima {
-
-  main {
-    .bg-bottom {
-      width: 100%;
-      height: 500px;
-      // 背景模様
-      background:
-        url(../images/image05.svg) no-repeat right bottom / 33%;
-      animation: yurayura02 10s ease 0s infinite;
-      margin-bottom: -50px;
-    }
-  }
-
   .contents {
     width: 100%;
-    // height: 100vh;
+    height: 100vh;
     padding: 100px 0;
     @include center;
     margin-bottom: -500px;
