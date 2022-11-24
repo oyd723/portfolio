@@ -141,7 +141,7 @@ header {
     // 背景模様
     height: 350px;
     background:
-      url(../images/image03.svg) no-repeat left top / 60%;
+      url(../images/image03.svg) no-repeat left top / 1200px;
     animation: yurayura01 10s ease 0s infinite;
     margin-top: -100px;
   }
@@ -181,7 +181,7 @@ footer {
     height: 100%;
     // 背景模様
     background:
-      url(../images/image05.svg) no-repeat right bottom / 33%;
+      url(../images/image05.svg) no-repeat right bottom / 600px;
     animation: yurayura02 10s ease 0s infinite;
     margin-bottom: -30px;
   }
@@ -546,6 +546,8 @@ footer {
 
           img {
             width: 350px;
+            position: relative;
+            z-index: 9999;
           }
 
           a {
